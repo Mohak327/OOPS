@@ -16,7 +16,7 @@ public:
     }
 
     void display(void){
-        cout <<" Code no :"<< code no << " \t";
+        cout <<" Code no :"<< codeno << " \t";
         cout <<" Price :"<< price << " \n" ;
     }
 
@@ -29,19 +29,16 @@ public:
 int X:: count = 0;
 
 int main (){
-    X Ob1, Ob2 ;
+    X Ob1, Ob2, Ob3;
     Ob1.getval(101, 25.12);
     Ob2.getval(102, 38.19);
-
-    X :: dispcount();
-    X Ob3;
     Ob3.getval(103, 49.00);
     X :: dispcount();
 
-    Obl.display();
+    Ob1.display();
     Ob2.display();
     Ob3.display();
 
-    cout<<"Made by: Mohak Sharma, 12-CSEA-19"
+    cout << "Made by: Mohak Sharma, 12-CSEA-19";
     return 0;
 }
