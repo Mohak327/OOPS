@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// Write a program to illustrate the concept of array of objects using classes
+
 class Basic{
     int a;
     int no;
