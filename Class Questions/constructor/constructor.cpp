@@ -1,0 +1,1 @@
+// Create a class named distance using constructor . Data members are inches and feet Write the functions to add two distance values. Display result. Input values will be from user
