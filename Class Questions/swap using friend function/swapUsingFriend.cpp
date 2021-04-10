@@ -8,7 +8,7 @@ class class_2;
 class class_1 {
     int num1;
 public:
-        void assign(int val)  {num1 = val;}
+        void assign(int val1)  {num1 = val1;}
         void display(void)  {cout << num1 << "\n";}
         friend void exchange(class_1 &, class_2 &);
 };
@@ -16,7 +16,7 @@ public:
 class class_2 {
     int num2;
 public:
-        void assign(int b)  {num2 = b;}
+        void assign(int val2)  {num2 = val2;}
         void display(void)  {cout << num2 << "\t";}
         friend void exchange(class_1 &, class_2 &);
 };
@@ -45,7 +45,7 @@ int main(){
 
     exchange (C1, C2);
 
-    cout <<"After swapping: \n";
+    cout << "After swapping: \n";
     C1.display();
     C2.display();
 
