@@ -8,7 +8,7 @@ class class_2;
 class class_1 {
     int num1;
 public:
-        void indata(int a)  {num1 = a;}
+        void assign(int val)  {num1 = val;}
         void display(void)  {cout << num1 << "\n";}
         friend void exchange(class_1 &, class_2 &);
 };
@@ -16,12 +16,12 @@ public:
 class class_2 {
     int num2;
 public:
-        void indata(int b)  {num2 = b;}
-        void display(void)  {cout << num2 << "\n";}
+        void assign(int b)  {num2 = b;}
+        void display(void)  {cout << num2 << "\t";}
         friend void exchange(class_1 &, class_2 &);
 };
 
-
+// Friend function always uses call through reference.
 void exchange (class_1 &x, class_2 &y){
     int temp = x.num1;
     x.num1 = y.num2;
@@ -36,8 +36,8 @@ int main(){
     cout << "Enter two numbers: ";
     cin >> a >> b;
 
-    C1.indata(a);
-    C2.indata(b);
+    C1.assign(a);
+    C2.assign(b);
 
     cout << "Before swapping: \n";
     C1.display();
