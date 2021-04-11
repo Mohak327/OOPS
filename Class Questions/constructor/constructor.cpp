@@ -15,7 +15,7 @@ class Distance {
     }
 
     // Constructor declaration
-        // Distance(int, int);
+        Distance(int, int);
 
     void putdata(void) {
         cout << "\nSum of distances is\n";
@@ -32,10 +32,10 @@ class Distance {
 };
 
 // Constructor definition
-// Distance :: Distance(int f, int i){
-//     feet = f;
-//     inches = i;
-// }
+Distance :: Distance(int f, int i){
+    feet = f;
+    inches = i;
+}
 
 int main() {
     Distance d1, d2, d3;
