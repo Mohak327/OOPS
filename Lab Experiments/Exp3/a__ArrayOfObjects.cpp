@@ -1,8 +1,7 @@
-#include <iostream>
-
-using namespace std;
-
 // Write a program to illustrate the concept of array of objects using classes
+
+#include <iostream>
+using namespace std;
 
 class Basic{
     int a;
