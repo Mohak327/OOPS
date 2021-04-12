@@ -1,4 +1,3 @@
-// #include<bits/stdc++.h>
 #include <iostream>
 #include <math.h>
 #include <conio.h>
@@ -24,15 +23,18 @@ int** inputMatrix(int row,int col){
 	return A;
 }
 
-void transposeMatrix(int** A, int row, int col){
-		int **transpose = new int*[row];
-		for(int i=0; i<row; i++){
-			transpose[i] = new int[col];
-			for(int j=0; j<col; j++){
-				transpose[i][j] = A[j][i];
-			}
-		printMatrix(transpose,row,col);
+void transposeMatrix(int **arr,int row,int col){
+	int** tr = new int*[col];
+	for(int i=0;i<col;i++){
+		tr[i] = new int[row];
 	}
+	
+	for(int i=0;i<row;i++){
+		for(int j=0;j<col;j++){
+			tr[j][i] = arr[i][j];
+		}
+	}
+	printMatrix(tr,col,row);
 }
 
 int main(){
@@ -54,7 +56,3 @@ int main(){
 
 	return 0;
 }
-
-
-
-
