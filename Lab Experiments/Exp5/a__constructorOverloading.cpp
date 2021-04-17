@@ -15,9 +15,14 @@ class Complex {
         imaginary = tempImaginary;
     }
 
-    Complex addComp(Complex C1, Complex C2) {
+    Complex addReal(Complex C1, Complex C2) {
         Complex temp;
         temp.real = C1.real + C2.real;
+        return temp;
+    }
+
+    Complex addComp(Complex C1, Complex C2) {
+        Complex temp;
         temp.imaginary = C1.imaginary + C2.imaginary;
         return temp;
     }
@@ -39,6 +44,7 @@ int main() {
     cout << "\tImaginary part: ";
     cin >> C2.imaginary;
 
+    C3 = C3.addReal(C1, C2);
     C3 = C3.addComp(C1, C2);
     cout<<"\nSum of complex number : " << C3.real << " + i" << C3.imaginary;
     cout << "\nMade by: Mohak Sharma, 12-CSEA-19\n\n";
