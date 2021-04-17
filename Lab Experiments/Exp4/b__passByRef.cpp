@@ -15,7 +15,7 @@ class Decimal{
 	public:
 		void print(){
 			cout<<"c = "<<c<<endl;
-			cout<<"d = "<<d<<endl; 
+			cout<<"d = "<<d<<endl;
 		}
 		friend void Number::modify(Decimal &x);
 };
@@ -31,7 +31,7 @@ int main(){
 	cout<<"Initially\n";
 	b.print();
 	a.modify(b);
-	cout<<"Modified Values\n";
+	cout<<"Modified Values (+10)\n";
 	b.print();
 	return 0;
 }

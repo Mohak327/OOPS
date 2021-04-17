@@ -1,11 +1,11 @@
-#include<iostream>
+// Write a program to implement the concept of pass by value using TIME class.
 
+#include<iostream>
 using namespace std;
 
 class Time {
     int hrs, mins, secs;
 public:
-    int tot_secs;
     void getTime () {
         cout << "\tHours: ";
         cin >> hrs;
@@ -41,4 +41,6 @@ int main () {
     t2.getTime();
 
     t1.sum(t1, t2);
+    cout << "\nMade By: Mohak Sharma, 12-CSEA-19";
+    return 0;
 }
