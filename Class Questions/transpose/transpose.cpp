@@ -23,7 +23,7 @@ int** inputMatrix(int row,int col){
 	return A;
 }
 
-void transposeMatrix(int **arr,int row,int col){
+int** transposeMatrix(int **arr,int row,int col){
 	int** tr = new int*[col];
 	for(int i=0;i<col;i++){
 		tr[i] = new int[row];
@@ -34,7 +34,7 @@ void transposeMatrix(int **arr,int row,int col){
 			tr[j][i] = arr[i][j];
 		}
 	}
-	printMatrix(tr,col,row);
+	return tr;
 }
 
 int main(){
@@ -51,8 +51,9 @@ int main(){
 	cout<<"Matrix A is \n";
 	printMatrix(A,row,col);
 
+	int ** transpose = transposeMatrix(A,row,col);
     cout<<"Transpose of matrix is \n";
-	transposeMatrix(A,row,col);
+	printMatrix(transpose,col,row);
 
 	return 0;
 }
