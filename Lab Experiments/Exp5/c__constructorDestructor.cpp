@@ -5,6 +5,7 @@ class Sample {
     int i, j;
 public:
     Sample(int a, int b) {
+		cout<<"Constructing...\n";
         i = a;
         j = b;
     }
@@ -24,6 +25,7 @@ int main () {
     cout << "enter 2 numbers: ";
     cin >> num1 >> num2;
 
+	cout << "Initialising...\n";
     Sample s1(num1, num2);
     s1.display();
 
