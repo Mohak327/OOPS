@@ -16,7 +16,7 @@ public:
     }
     void cal(float rate) {
         float si, ci, n;
-        n = 1;      
+        n = 1;
         si = (p * t * rate) / 100;
         cout << "\nSimple Interest (Annually): " << si;
         ci = p * pow((1 + (rate/100)/n), n*t) - p;
@@ -24,8 +24,7 @@ public:
     }
 };
 
-int main()
-{
+int main() {
 interest value;
 
 float rate;

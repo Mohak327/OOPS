@@ -39,7 +39,7 @@ void STUDENTS::putdata(void) {
 
 int main() {
 
-    STUDENTS stud[NUM];
+    STUDENTS stud[5];
 
     int n;
     cout << "Enter no. of students you want to add: ";

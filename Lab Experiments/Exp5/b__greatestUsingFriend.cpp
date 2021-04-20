@@ -24,5 +24,7 @@ int main(){
     Numbers N1;
     N1.input();
     greatest(N1);
+
+    cout << "\nMade by: Mohak Sharma, 12-CSEA-19\n\n";
     return 0;
 }

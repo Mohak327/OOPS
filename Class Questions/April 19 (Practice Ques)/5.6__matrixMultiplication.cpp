@@ -27,7 +27,6 @@ class Matrix{
 		void prodMatrix(int** A,int ar,int ac,int** B,int br,int bc){
 			if(ac==br){
 				int **C = new int*[ar];
-
 				for(int i = 0; i < ar; i++){
 		        	C[i] = new int[bc];
 		        	for(int j = 0; j < bc; j++){
@@ -71,6 +70,7 @@ int main(){
 	cin>>bc;
 
 	Matrix m1, m2, m3;
+
     cout << "\nEnter the elements of matrix-1: ";
     int **A = m1.inputMatrix(ar,ac);
     cout << "Enter the elements of matrix-2: ";
