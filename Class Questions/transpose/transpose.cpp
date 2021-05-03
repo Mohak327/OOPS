@@ -3,15 +3,6 @@
 #include <conio.h>
 using namespace std;
 
-void printMatrix(int **arr,int row,int col){
-	for(int i=0; i<row; i++) {
-		for(int j=0; j<col; j++) {
-			cout<< arr[i][j] << " ";
-		}
-		cout << endl;
-	}
-}
-
 int** inputMatrix(int row,int col){
 	int** A = new int*[row];
 	for(int i=0; i<row; i++){
@@ -23,12 +14,21 @@ int** inputMatrix(int row,int col){
 	return A;
 }
 
+void printMatrix(int **arr,int row,int col){
+	for(int i=0; i<row; i++) {
+		for(int j=0; j<col; j++) {
+			cout<< arr[i][j] << " ";
+		}
+		cout << endl;
+	}
+}
+
 int** transposeMatrix(int **arr,int row,int col){
 	int** tr = new int*[col];
 	for(int i=0;i<col;i++){
 		tr[i] = new int[row];
 	}
-	
+
 	for(int i=0;i<row;i++){
 		for(int j=0;j<col;j++){
 			tr[j][i] = arr[i][j];

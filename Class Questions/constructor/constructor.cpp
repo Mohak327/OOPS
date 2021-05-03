@@ -1,4 +1,6 @@
-// Create a class named distance using constructor . Data members are inches and feet Write the functions to add two distance values. Display result. Input values will be from user.
+// Create a class named distance using constructor .
+// Data members are inches and feet Write the functions to add two distance values.
+// Display result. Input values will be from user.
 
 #include <iostream>
 using namespace std;
@@ -15,7 +17,7 @@ class Distance {
     }
 
     // Constructor declaration
-        Distance(int, int);
+    Distance(int, int);
 
     void putdata(void) {
         cout << "\nSum of distances is\n";
@@ -24,11 +26,11 @@ class Distance {
     }
 
     void add(Distance d1, Distance d2) {
-			feet = d1.feet + d2.feet;
-			inches = d1.inches + d2.inches;
-			feet = feet + (inches / 12);
-			inches = inches % 12;
-		}
+        feet = d1.feet + d2.feet;
+        inches = d1.inches + d2.inches;
+        feet = feet + (inches / 12);
+        inches = inches % 12;
+	}
 };
 
 // Constructor definition

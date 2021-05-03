@@ -1,39 +1,37 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class Array{
-	public:
-		int arr[10] = {13,29,35,48,5,46,43,12,98,23} ;
-		void showArray(){
-			int n = sizeof(arr)/sizeof(int);
-			cout<<"The array is : ";
-			for(int i=0;i<n;i++){
-				cout<<arr[i]<<" ";
-			}
-		}
-		
-		int linearSearch(int num){
-			int n = sizeof(arr)/sizeof(int);
-			for(int i=0;i<n;i++){
-				if(arr[i]==num){
-					return i+1;
-				}
-			}
-			return -1;
-		}
+class Array {
+    public:
+        int search(int size, int arr[], int item) {
+            for (int i=0; i<size; i++) {
+                if (arr[i]==item) {
+                    int pos = i+1;
+                    return (pos);
+                }
+            }
+            return (-1);
+        }
 };
 
-int main(){
-	Array a;
-	a.showArray();
-	
-	cout<<"\nEnter the element to search : ";
-	int y;
-	cin>>y;
-	cout<<endl;
-	int index = a.linearSearch(y);
-	cout<<y<<" is present at : "<<index;
+int main() {
+    int item, arr[50], size;
+    Array obj;
 
-	return 0;
+    cout << "Enter the size of array: ";
+    cin >> size;
+
+    cout << "Enter the elements of array: ";
+    for (int i=0; i<size; i++)
+        cin >> arr[i];
+
+    cout << "Enter the element to be searched: ";
+    cin >> item;
+
+    int pos = obj.search(size, arr, item);
+    (pos == -1)
+        ? cout << "Element is not present in the array."
+        : cout << "Element "<< item <<" is present at position " << pos;
+
+    return 0;
 }
-

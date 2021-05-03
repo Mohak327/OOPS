@@ -4,8 +4,7 @@
 
 using namespace std;
 
-class area
-{
+class Area {
     public :
 
         double areaTriangle(int base, int height) {
@@ -24,7 +23,7 @@ class area
 
 int main() {
 
-    area shapes;
+    Area shapes;
     int base, height, horiSide, vertSide, radius, choice;
 
     cout << "\nChoose the polygon: \n";
@@ -33,14 +32,15 @@ int main() {
     cout << "2. Rectangle\n";
     cout << "3. Circle\n";
     cout << "4. Exit\n";
-    cout << "----------------------------\n";
-    cout << "\nEnter your choice: ";
-    cin >> choice;
+    cout << "----------------------------";
 
     do {
+        cout << "\n\nEnter your choice: ";
+        cin >> choice;
+
         switch (choice) {
         case 1:
-            cout << "\nEnter the height: ";
+            cout << "Enter the height: ";
             cin >> height;
             cout << "Enter the base: ";
             cin >> base;

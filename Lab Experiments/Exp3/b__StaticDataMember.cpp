@@ -15,7 +15,7 @@ public:
         ++count;
     }
 
-    void display(void){
+    void display(void) {
         cout <<" Code no :"<< codeno << " \t";
         cout <<" Price :"<< price << " \n" ;
     }

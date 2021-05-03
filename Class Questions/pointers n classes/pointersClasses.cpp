@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 using namespace std;
 
@@ -17,19 +15,28 @@ public:
 
 void Student::getdata(void) {
 
-    char Student::*ptrname = &Student::name;
-    int Student::*ptrroll = &Student::rollNo;
-    int Student::*ptrclass = &Student::classNo;
-    int Student::*ptrmarks = &Student::marks;
+    // char Student::*ptrname = &Student::name;
+    // int Student::*ptrroll = &Student::rollNo;
+    // int Student::*ptrclass = &Student::classNo;
+    // int Student::*ptrmarks = &Student::marks;
+
+    // cout << "Name:";
+    // cin >> *ptrname;
+    // cout << "Roll no:";
+    // cin >> *ptrroll;
+    // cout << "Class:";
+    // cin >> *ptrclass;
+    // cout << "Marks:";
+    // cin >> *ptrmarks;
 
     cout << "Name:";
-    cin >> *ptrname;
+    cin >> name;
     cout << "Roll no:";
-    cin >> *ptrroll;
+    cin >> rollNo;
     cout << "Class:";
-    cin >> *ptrclass;
+    cin >> classNo;
     cout << "Marks:";
-    cin >> *ptrmarks;
+    cin >> marks;
 }
 
 void Student::putdata(void) {
@@ -42,8 +49,10 @@ void Student::putdata(void) {
 int main() {
 
     int n;
-    cout << "Enter no. of students you want to add: ";
+    cout << "Enter no. of students you want to add (max-10): ";
     cin >> n;
+
+    Student stud[10];
 
     for (int i = 0; i < n; n++) {
         cout << "Enter the details of student-" << i + 1 <<"\n";
