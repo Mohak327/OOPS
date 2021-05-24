@@ -22,7 +22,7 @@ public:
         Vehicle::getdata();
         cout << "What is your budget: ";
         cin >> budget;
-        cout << "What would be the desired top speed (Car/Bike/Others): ";
+        cout << "What would be the desired vehicle (Car/Bike/Others): ";
         cin >> means;
     }
 
