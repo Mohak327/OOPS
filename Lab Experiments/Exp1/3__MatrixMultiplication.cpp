@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -52,10 +53,6 @@ class Matrix{
 };
 
 
-
-
-
-
 int main(){
 	int ar,ac,br,bc;
 
@@ -70,7 +67,9 @@ int main(){
 	cin>>bc;
 
 	Matrix m;
+	cout << "\nEnter the elements of matrix A: ";
 	int **A = m.inputMatrix(ar,ac);
+	cout << "Enter the elements of matrix B: ";
 	int **B = m.inputMatrix(br,bc);
 
 	cout<<"Matrix A is \n";
@@ -85,5 +84,3 @@ int main(){
 
 	return 0;
 }
-
-

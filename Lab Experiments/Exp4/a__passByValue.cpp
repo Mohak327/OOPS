@@ -34,7 +34,6 @@ void Time::sum(Time t1, Time t2) {
 
 int main () {
     Time t1, t2;
-
     cout << "Enter Time-1 details\n";
     t1.getTime();
     cout << "\nEnter Time-2 details\n";
