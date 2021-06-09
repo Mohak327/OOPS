@@ -26,7 +26,7 @@ public:
 //Multiple Inheritance
 class Bucky: public Dog, public Breed{
 public:
-    Rocky(){
+    Bucky(){
         cout << "\nHe responds to the name Bucky! \n";
     }
 };
