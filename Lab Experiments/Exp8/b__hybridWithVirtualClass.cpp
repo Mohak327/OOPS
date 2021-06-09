@@ -14,7 +14,7 @@ public:
 
   void put_number()
   {
-   cout<<"Roll Number: "<<roll<<endl;
+   cout<<"\n\nRoll Number: "<<roll<<endl;
   }
 };
 
@@ -48,7 +48,7 @@ class sports
 
   void put_score()
   {
-   cout<<"\nSports Score: "<<score<<"\n\n";
+   cout<<"Sports Score: "<<score<<"\n\n";
   }
 };
 
@@ -63,17 +63,16 @@ class result : public test, public sports
    put_number();
    put_marks();
    put_score();
-   cout<<"Total Score: "<<total<<"\n";
+   cout<<"Total Score: "<< part1 <<" + "<< part2 <<" + "<< score << " = " <<total<<"\n";
   }
 };
 
-void main()
-{
- clrscr();
- result student;
- student.get_number(83);
- student.get_marks(95,98);
- student.get_score(9);
- student.display();
- getch();
+int main() {
+  result student;
+  student.get_number(83);
+  student.get_marks(95,98);
+  student.get_score(9);
+  student.display();
+  cout << "Made By: Mohak Sharma, 12-CSEA-19\n\n";
+  return 0;
 }

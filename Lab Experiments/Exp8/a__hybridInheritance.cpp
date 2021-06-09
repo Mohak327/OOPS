@@ -4,7 +4,7 @@ using namespace std;
 class Animal{
 public:
     Animal(){
-        cout << "This is an Animal ";
+        cout << "\n\nThis is an Animal ";
     }
 };
 
@@ -34,5 +34,6 @@ public:
 int main()
 {
     Bucky mydog;
+    cout << "Made By: Mohak Sharma, 12-CSEA-19\n\n";
     return 0;
 }
