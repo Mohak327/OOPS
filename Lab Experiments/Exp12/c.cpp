@@ -1,18 +1,31 @@
-// Code by: jindal2209
-
-#include<iostream>
+#include <iostream>
+#include <string.h>
 using namespace std;
+int main() {
+    char str[100];
+    int i,vowels=0;
 
-string addString(string a,string b){
-	return a+b;
-}
+    cout<<"\nEnter the string : ";
+    gets(str);
 
-int main(){
-    string s1 = "I am";
-    string s2 = " Batman";
-    string s3 = addString(s1,s2);
-    cout << "\n";
-    cout<<"s1: "<<s1<<"\ns2: "<<s2<<"\ns3: "<<s3;
+    for(i=0;str[i];i++) {
+        if(str[i]=='a'
+            || str[i]=='e'
+            ||str[i]=='i'
+            ||str[i]=='o'
+            ||str[i]=='u'
+            ||str[i]=='A'
+            ||str[i]=='E'
+            ||str[i]=='I'
+            ||str[i]=='O'
+            ||str[i]=='U'
+        )
+		    vowels++;
+    }
+
+    //Printing the count of vowels.
+    cout<<"The number of vowels in the string: "<<vowels;
+
 
     return 0;
 }
