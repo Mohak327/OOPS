@@ -12,7 +12,7 @@ class String {
 			this->s = s;
 		}
 
-		string operator=(String &a){
+		String operator=(String &a){
 			s = a.s;
 			return s;
 		}
@@ -21,10 +21,10 @@ class String {
 int main()
 {
 	String a("Bruce");
-	String b("Wayne");
+	String b("Banner");
 
-	cout<<"String a is "<<a.s<<"\nString b is "<<b.s<<endl;
+	cout<<"\nString a is "<<a.s<<"\nString b is "<<b.s<<endl;
 	a = b;
-	cout<<"a is: "<<a.s;
+	cout<<"String a after copy is: "<<a.s;
 	return 0;
 }

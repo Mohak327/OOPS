@@ -24,6 +24,7 @@ void operator+(string a,string b){
 
 int main()
 {
+	cout << "\n";
 	String a("I am ");
 	String b("Ironman");
 	String c("") ;

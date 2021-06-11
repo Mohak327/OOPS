@@ -14,7 +14,7 @@ class String {
 
 		bool operator<=(String &a){
 			if(s.length() <= a.s.length())
-			return 1;
+				return 1;
 			return 0;
 		}
 };
@@ -23,8 +23,7 @@ int main()
 {
 	String a("Bruce");
 	String b("Wayne");
-    cout << "\n";
-    cout<<"String a is "<<a.s<<"\nString b is "<<b.s<<endl;
+    cout<<"\nString a is "<<a.s<<"\nString b is "<<b.s<<endl;
 	if(a <= b){
 		cout<<"length of a is less than or equal to length of b\n";
 	}

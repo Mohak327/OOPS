@@ -8,7 +8,7 @@ int main(){
     fstream fout;
     fout.open("a.txt");
     string line;
-    cout<<"Enter some line to write to file\n";
+    cout<<"Enter some line to write to file:\n";
     while(fout){
     	getline(cin,line);
     	if (line == "-1")
