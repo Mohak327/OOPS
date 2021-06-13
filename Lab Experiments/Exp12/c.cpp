@@ -2,7 +2,9 @@
 #include <string.h>
 using namespace std;
 int main() {
-    char str[100];
+    // char str[100];
+    char* str = new char[strlen(str) + 1];
+    
     int i,vowels=0;
 
     cout<<"\nEnter the string : ";
